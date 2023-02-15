@@ -1,0 +1,45 @@
+@media screen and (min-width: 428px) {
+  .conteiner {
+    max-width: 428px;
+    margin: 0 auto;
+  }
+    /* ------------------- HEADER---------------- --> */
+
+  .site-nav {
+    display: none;
+  }
+  .main-nav {
+    display: none;
+  }
+
+/* ------------------- MODAL HEADER---------------- --> */
+
+.mobile-menu-item-tel {
+  font-size: 36px;
+  line-height: calc(40 / 36);
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 56px;
+}
+/* ------------------ HERO ------------------------------------> */
+
+/* ----------------- Section2 ----------> */
+
+/* ------------- Section3 -----------> */
+
+/* ------------- Section4 -----------> */
+
+/* ---------- Customers ----------> */
+
+/* ------------ FOOTER ----------> */
+.subscribe-input {
+    width: 396px;
+}
+/* ------------ Modal -----------> */
+.check-text {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+}
