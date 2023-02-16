@@ -1,13 +1,16 @@
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
-    max-width: 100%;
+    max-width: 768px;
     margin: 0 auto;
+    /* border: 1px solid red; */
   }
   /* ------------------- HEADER---------------- --> */
   .header-list.current {
     color: #4d5ae5;
     position: relative;
+  }
+  .conteiner-header {
+    width: 768px;
   }
   .current::after {
     content: "";
@@ -20,7 +23,7 @@
     border-radius: 2px;
   }
   .header-list {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.02em;
@@ -35,9 +38,9 @@
     color: var(--activ-color);
   }
   .header-link {
-    font-size: 16px;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
     color: #434455;
     font-style: normal;
     transition: color 250ms var(--cubic);
@@ -46,34 +49,184 @@
   .header-link:focus {
     color: var(--activ-color);
   }
+  .site-nav {
+    display: flex;
+  }
+  .contacts {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .contacts > .link:not(:last-child) {
+    margin-bottom: 4px;
+    margin-right: 0;
+  }
+  .header {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background: #ffffff;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-grey-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
 
-/* ------------------- MODAL HEADER---------------- --> */
-.mobile-menu-item-tel {
-  font-size: 36px;
-  line-height: calc(40 / 36);
+  /* ------------------- MODAL HEADER---------------- --> */
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+
+  /* ------------------ HERO --------------------------> */
+  .hero {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: var(--gra),
+      url(../images/main-page/people-office-desktop.jpg);
+  }
+  .hero-title {
+    max-width: 492px;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: calc(60 / 55);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ----------------- Section2 ----------> */
+  .section-two-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    /* width: 1128px; */
+    /* margin-right: 15px;
+    margin-left: 15px; */
+  }
+  .section-two-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .section-two-title {
+    text-align: start;
+  }
+  /* ------------- Section3 -----------> */
+
+  /* ------------- Section4 -----------> */
+  .section-four-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 56px;
+  }
+  .item-style {
+    width: 264px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .item-style:not(:last-child) {
+    margin-bottom: 0;
+  }
+  /* ---------- Customers ----------> */
+
+  .customers {
+    width: 582px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .customers-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    margin: 0;
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-item:nth-last-child(n + 3) {
+    margin-bottom: 0;
+  }
+  .customers-item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .customers-item > .customers-link {
+    width: 168px;
+  }
+  /* ------------ FOOTER ----------> */
+  
+  .cont-tablet {
+    width: 582px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    row-gap: 72px;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+  }
+  .footer-box-one {
+  margin-bottom: 0;
 }
-.social-list-item:not(:last-child) {
-    margin-right: 56px;
+.footer-studio {
+  text-align: start;
 }
-    /* ------------------ HERO --------------------------> */
-
-/* ----------------- Section2 ----------> */
-
-/* ------------- Section3 -----------> */
-
-/* ------------- Section4 -----------> */
-
-/* ---------- Customers ----------> */
-
-/* ------------ FOOTER ----------> */
-.subscribe-input {
-    width: 396px;
+.footer-soc-title{
+  text-align: start;
 }
-/* ------------ Modal -----------> */
-.check-text {
-  font-size: 12px;
-  line-height: calc(16 / 12);
+.conteiner-footer-two{
+  margin-bottom: 0;
+  margin-left: 24px;
+  margin-right: 0;
+}
+.subscribe-title{
+  text-align: start;
+}
+.footer-form{
+  display: block;
+}
+  .subscribe-input {
+    width: 264px;
+  }
+  .subscribe-menu{
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-icon{
+    margin-left: 15px;
+  }
+  /* ------------ Modal -----------> */
+  .check-text {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+  }
 }
 
-
-}

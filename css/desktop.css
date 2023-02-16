@@ -60,8 +60,27 @@
     margin-right: 56px;
 }
     /* ------------------ HERO --------------------------> */
-
+.hero {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: var(--gra), url(../images/main-page/people-office-desktop.jpg);
+}
 /* ----------------- Section2 ----------> */
+.conteiner-section-two {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.section-two-title {
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: var(--text-grey-color);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 8px;}
 
 /* ------------- Section3 -----------> */
 
@@ -70,6 +89,13 @@
 /* ---------- Customers ----------> */
 
 /* ------------ FOOTER ----------> */
+.cont {
+  width: 1158px;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
 .subscribe-input {
     width: 396px;
 }
