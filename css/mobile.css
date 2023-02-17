@@ -37,10 +37,19 @@
 /* ------------- Section3 -----------> */
 
 /* ------------- Section4 -----------> */
-
+.section-four{
+  width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ---------- Customers ----------> */
 
 /* ------------ FOOTER ----------> */
+.footer{
+  width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .cont-tablet{
     width: 396px;
 }

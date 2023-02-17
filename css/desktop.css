@@ -85,10 +85,16 @@
 /* ------------- Section3 -----------> */
 
 /* ------------- Section4 -----------> */
-
+ .section-four{
+  width: 100%;
+  }
 /* ---------- Customers ----------> */
 
 /* ------------ FOOTER ----------> */
+.footer{
+  width: 100%;
+
+}
 .cont {
   width: 1158px;
   margin: 0 auto;

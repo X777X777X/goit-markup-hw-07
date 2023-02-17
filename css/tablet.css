@@ -134,6 +134,11 @@
   /* ------------- Section3 -----------> */
 
   /* ------------- Section4 -----------> */
+  .section-four{
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  }
   .section-four-list {
     display: flex;
     justify-content: center;
@@ -180,7 +185,11 @@
     width: 168px;
   }
   /* ------------ FOOTER ----------> */
-
+.footer{
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
   .cont-tablet {
     width: 582px;
     margin-left: auto;
