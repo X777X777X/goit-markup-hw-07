@@ -37,10 +37,7 @@ img {
   display: block;
 }
 .conteiner {
-  /* width: 100%; */
-  max-width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 480px;
   margin: 0 auto;
 }
 .conteiner-mini {
@@ -92,12 +89,7 @@ img {
 .site-contacts > .link + .link {
   margin-left: 40px;
 }
-.cont-header {
-  width: 1158px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
-}
+
 .header {
   padding: 24px 0;
   background: #ffffff;
@@ -141,7 +133,6 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
-  /* margin-right: 76px; */
 }
 .mobile-menu-open {
   top: 50%;
@@ -167,6 +158,9 @@ img {
   position: fixed;
   width: 100%;
   height: 100vh;
+    padding-top: 80px;
+  padding-left: 40px;
+  padding-bottom: 40px;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -181,12 +175,7 @@ img {
   transform: translateX(0);
 }
 .mobile-menu-conteiner {
-  position: relative;
   height: 100vh;
-  padding-top: 80px;
-  padding-left: 40px;
-  padding-bottom: 40px;
-  max-width: 428;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -199,8 +188,8 @@ img {
   justify-content: center;
   width: 24px;
   height: 24px;
-  right: 48px;
-  top: 48px;
+  right: 25px;
+  top: 25px;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -296,7 +285,7 @@ img {
   text-align: center;
 }
 .hero {
-  max-width: 428px;
+  max-width: 480px;
   margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 109px;
@@ -306,6 +295,13 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+  background-image: var(--gra), url(../images/main-page/people-office-mob-2x.jpg);
+  }
 }
 .section-two .section-three .section-four {
   background: #f4f4fd;
@@ -342,25 +338,11 @@ img {
 .section-two {
   padding-top: 96px;
   padding-bottom: 96px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #ffffff;
 }
-/* .conteiner-section-two {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-} */
 .section-two-title {
-  /* font-size: 20px;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;
-  color: var(--text-grey-color);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-bottom: 8px;}
-   */
-
   font-weight: 600;
   font-size: 36px;
   line-height: calc(40px / 36px);
@@ -381,7 +363,6 @@ img {
 }
 .section-two-item {
   min-width: 264px;
-  /* margin-right: 24px; */
   margin-left: auto;
   margin-left: auto;
 }
@@ -392,7 +373,6 @@ img {
   display: none;
   width: 264px;
   height: 112px;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: #f4f4fd;
@@ -414,7 +394,7 @@ img {
   margin-bottom: 72px;
 }
 .section-three-flex {
-  width: 1158px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -424,23 +404,23 @@ img {
 }
 .section-three-flex .item .link {
   width: 360px;
+  background: linear-gradient(
+      0deg,
+      rgba(77, 90, 229, 0.1),
+      rgba(77, 90, 229, 0.1)
+    ),
+    url(2225.jpg);
+  border: 1px solid #e7e9fc;
 }
 .section-three-flex .item .link + .link {
   margin-left: 24px;
 }
 /* --------------SECTION 4 */
 .section-four {
+  max-width: 480px;
   background: #f4f4fd;
   padding-top: 96px;
   padding-bottom: 96px;
-}
-.section-four-list {
-  /* display: flex;
-  justify-content: center; */
-}
-.item > .link + .link {
-  /* margin-left: 24px; */
-  /* width: 100%; */
 }
 .item-style {
   width: 264px;
@@ -516,14 +496,20 @@ img {
   background-color: var(--activ-color);
 }
 /* ------------CUSTOMERS */
+.customers-conteiner {
+  width: 480px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .customers {
-  /* width: 1158px; */
-  /* padding: 120px 15px; */
+  max-width: 396px;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 .customers-title {
   font-weight: 700;
@@ -543,7 +529,6 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  /* width: calc((100% - 120px) / 6); */
   width: calc((100% - 16px) / 2);
 }
 .customers-item:nth-last-child(n + 3) {
@@ -585,6 +570,8 @@ img {
   background: var(--text-grey-color);
   padding-top: 96px;
   padding-bottom: 96px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .footer-web {
   font-family: "Raleway";
@@ -592,7 +579,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16em;
-  /* display: flex; */
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -608,7 +594,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: calc(21 / 18);
-  /* display: flex; */
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -636,11 +621,12 @@ img {
   text-align: center;
 }
 .footer-box-one {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 72px;
 }
-
 .conteiner-footer-two {
-  /* margin-left: 120px; */
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 72px;
@@ -676,16 +662,13 @@ img {
   background-color: #31d0aa;
 }
 /* ------------------FORM FOOTER-------- */
-.footer-form {
-  /* margin-left: 80px; */
-}
 .subscribe {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   flex-direction: column;
   align-items: center;
-    text-align: center;
+  text-align: center;
 }
 .subscribe-title {
   font-weight: 600;
@@ -696,12 +679,11 @@ img {
   margin-bottom: 16px;
   text-align: center;
 }
-.subscribe-menu{
+.subscribe-menu {
   width: 100%;
 }
 .subscribe-lable {
   margin-bottom: 16px;
-  width: 1000%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -885,13 +867,6 @@ img {
   box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/* -------------CONTEINERS INDEX */
-/* .section-three-flex {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-} */
 .section-title-centered {
   text-align: center;
 }

@@ -2,7 +2,6 @@
   .conteiner {
     max-width: 768px;
     margin: 0 auto;
-    /* border: 1px solid red; */
   }
   /* ------------------- HEADER---------------- --> */
   .header-list.current {
@@ -10,7 +9,7 @@
     position: relative;
   }
   .conteiner-header {
-    width: 768px;
+    width: 100%;
   }
   .current::after {
     content: "";
@@ -62,7 +61,7 @@
     margin-right: 0;
   }
   .header {
-    max-width: 768px;
+    max-width: 1199px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -98,15 +97,21 @@
   .mobile-menu-open {
     display: none;
   }
-
   /* ------------------ HERO --------------------------> */
   .hero {
-    max-width: 768px;
+    max-width: 1199px;
     margin-left: auto;
     margin-right: auto;
     background-image: var(--gra),
       url(../images/main-page/people-office-desktop.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+  background-image: var(--gra), url(../images/main-page/people-office-desktop-2x.jpg);
+  }
+}
   .hero-title {
     max-width: 492px;
     font-weight: 600;
@@ -121,9 +126,6 @@
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    /* width: 1128px; */
-    /* margin-right: 15px;
-    margin-left: 15px; */
   }
   .section-two-item {
     width: calc((100% - 24px) / 2);
@@ -134,10 +136,11 @@
   /* ------------- Section3 -----------> */
 
   /* ------------- Section4 -----------> */
-  .section-four{
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
+  .section-four {
+    max-width: 1199px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .section-four-list {
     display: flex;
@@ -155,11 +158,17 @@
     margin-bottom: 0;
   }
   /* ---------- Customers ----------> */
-
-  .customers {
-    width: 582px;
+  .customers-conteiner {
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .customers {
+    max-width: 552px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -185,13 +194,13 @@
     width: 168px;
   }
   /* ------------ FOOTER ----------> */
-.footer{
-  width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .footer {
+    max-width: 1199px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .cont-tablet {
-    width: 582px;
+    width: 520px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -232,10 +241,12 @@
   .subscribe-icon {
     margin-left: 15px;
   }
+  .subscribe-label{
+    width: 264px;
+  }
   /* ------------ Modal -----------> */
   .modal {
     width: 408px;
-
   }
   .check-text {
     font-size: 12px;

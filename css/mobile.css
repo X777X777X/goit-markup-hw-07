@@ -1,64 +1,70 @@
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 480px) {
   .conteiner {
-    max-width: 428px;
+    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
   }
-    /* ------------------- HEADER---------------- --> */
-.header{
-  max-width: 428px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  /* ------------------- HEADER---------------- --> */
+  .header {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .site-nav {
     display: none;
   }
   .main-nav {
     display: none;
   }
-
-/* ------------------- MODAL HEADER---------------- --> */
-
-.mobile-menu-item-tel {
-  font-size: 36px;
-  line-height: calc(40 / 36);
-}
-
-.social-list-item:not(:last-child) {
+  /* ------------------- MODAL HEADER---------------- --> */
+  .mobile-menu-item-tel {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+  .social-list-item:not(:last-child) {
     margin-right: 56px;
+  }
+  /* ------------------ HERO ------------------------------------> */
+  .hero {
+    max-width: 767px;
+    margin: 0 auto;
+    background-image: var(--gra),
+      url(../images/main-page/people-office-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+  background-image: var(--gra), url(../images/main-page/people-office-tablet-2x.jpg);
+  }
 }
-/* ------------------ HERO ------------------------------------> */
-.hero {
-  max-width: 428px;
-  margin: 0 auto;
-  background-image: var(--gra), url(../images/main-page/people-office-tablet.jpg);
-}
-/* ----------------- Section2 ----------> */
+  /* ----------------- Section2 ----------> */
 
-/* ------------- Section3 -----------> */
+  /* ------------- Section3 -----------> */
 
-/* ------------- Section4 -----------> */
-.section-four{
-  width: 428px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* ---------- Customers ----------> */
+  /* ------------- Section4 -----------> */
+  .section-four {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ---------- Customers ----------> */
 
-/* ------------ FOOTER ----------> */
-.footer{
-  width: 428px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.cont-tablet{
+  /* ------------ FOOTER ----------> */
+  .footer {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cont-tablet {
     width: 396px;
-}
-/* ------------ Modal -----------> */
-.check-text {
-  font-size: 12px;
-  line-height: 1.33;
-}
-.modal {
-  width: 392px;
-}
+  }
+  /* ------------ Modal -----------> */
+  .check-text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .modal {
+    width: 392px;
+  }
 }

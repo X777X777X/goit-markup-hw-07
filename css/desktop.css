@@ -1,11 +1,22 @@
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .conteiner {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
-      /* ------------------- HEADER---------------- --> */
-
+  /* ------------------- HEADER---------------- --> */
+  .header {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .conteiner-header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header-list.current {
     color: #4d5ae5;
     position: relative;
@@ -21,7 +32,7 @@
     border-radius: 2px;
   }
   .header-list {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.02em;
@@ -47,73 +58,163 @@
   .header-link:focus {
     color: var(--activ-color);
   }
-/* ------------------- MODAL HEADER---------------- --> */
-.social-list-item:not(last-child){
-  margin-right: 56px;
-}
-
-.mobile-menu-item-tel {
-  font-size: 36px;
-  line-height: calc(40 / 36);
-}
-.social-list-item:not(:last-child) {
-    margin-right: 56px;
-}
-    /* ------------------ HERO --------------------------> */
-.hero {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: var(--gra), url(../images/main-page/people-office-desktop.jpg);
-}
-/* ----------------- Section2 ----------> */
-.conteiner-section-two {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.section-two-title {
-  font-size: 20px;
-  line-height: 1.2em;
-  letter-spacing: 0.02em;
-  color: var(--text-grey-color);
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-bottom: 8px;}
-
-/* ------------- Section3 -----------> */
-
-/* ------------- Section4 -----------> */
- .section-four{
-  width: 100%;
+  .header-flex {
+    display: flex;
+    justify-content: space-around;
   }
-/* ---------- Customers ----------> */
+  .contacts {
+    display: flex;
+  }
+  .contacts > .link:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .contacts > .link:first-child {
+    margin-right: 40px;
+  }
+  .site-nav > .link {
+    margin-right: 40px;
+  }
+  .site-nav > .link:last-child {
+    margin-right: 0;
+  }
+  /* ------------------- MODAL HEADER---------------- --> */
+  .social-list-item:not(last-child) {
+    margin-right: 56px;
+  }
 
-/* ------------ FOOTER ----------> */
-.footer{
-  width: 100%;
+  .mobile-menu-item-tel {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+  .social-list-item:not(:last-child) {
+    margin-right: 56px;
+  }
+  /* ------------------ HERO --------------------------> */
+  .hero {
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: var(--gra),
+      url(../images/main-page/people-office-desktop.jpg);
+  }
 
-}
-.cont {
-  width: 1158px;
-  margin: 0 auto;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.subscribe-input {
-    width: 396px;
-}
-/* ------------ Modal -----------> */
-.check-text {
-  font-size: 12px;
-  line-height: calc(16 / 12);
-}
+  /* ----------------- Section2 ----------> */
+  .section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-two-icon {
+    display: flex;
+  }
+  .section-two-item {
+    width: 264px;
+  }
+  .section-two-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .section-two-title {
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    color: var(--text-grey-color);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 8px;
+  }
+  .section-two-list {
+    flex-wrap: no-wrap;
+    column-gap: 24px;
+    row-gap: 0;
+  }
+  .section-two-text {
+    font-weight: 400;
+  }
+  /* ------------- Section3 -----------> */
+  .section-three {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* ------------- Section4 -----------> */
+  .section-four {
+    max-width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-
-
-
-
-
+  .section-four-list {
+    flex-wrap: nowrap;
+    column-gap: 0;
+    row-gap: 0;
+  }
+  .item-style:not(:last-child) {
+    margin-right: 24px;
+  }
+  /* ---------- Customers ----------> */
+  .customers-conteiner {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .customers {
+    max-width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .customers-list {
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    row-gap: 0;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .customers-link {
+    margin-right: 0;
+  }
+  .customers-item:nth-child(odd) {
+    margin-right: 0;
+  }
+  /* ------------ FOOTER ----------> */
+  .footer {
+    /* min-width: 1200px; */
+    max-width: 100%;
+  }
+  .cont {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .conteiner-footer-two {
+    margin-left: 120px;
+  }
+  .footer-box-one {
+    width: 264px;
+  }
+  .footer-form {
+    width: 453px;
+    margin-left: 80px;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .subscribe-lable {
+    margin-bottom: 0;
+  }
+  /* ------------ Modal -----------> */
+  .check-text {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+  }
 }
