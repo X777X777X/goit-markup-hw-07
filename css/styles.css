@@ -103,6 +103,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 17px;
 }
 .header-web {
   width: 44px;
@@ -141,7 +143,6 @@ img {
   border: none;
   padding: 0;
   line-height: 0;
-  margin-right: 25px;
 }
 .burger-open {
   stroke: #212121;
