@@ -284,6 +284,12 @@ img {
   max-width: 320px;
   text-align: center;
 }
+@media screen and (max-width:333px) {
+  .hero-title {
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  }
+}
 .hero {
   max-width: 480px;
   margin: 0 auto;
