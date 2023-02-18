@@ -1056,6 +1056,9 @@ img {
   border: none;
   fill: #f4f4fd;
 }
+.privacy-policy{
+  color: #4d5ae5;
+}
 /* .check-text::before{
   content: '';
   width: 16px;
