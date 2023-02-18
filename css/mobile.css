@@ -39,7 +39,9 @@
   }
 }
   /* ----------------- Section2 ----------> */
-
+/* .section-two {
+  width: 450px;
+} */
   /* ------------- Section3 -----------> */
 
   /* ------------- Section4 -----------> */
@@ -57,7 +59,7 @@
     margin-right: auto;
   }
   .cont-tablet {
-    width: 396px;
+    width: 428px;
   }
   /* ------------ Modal -----------> */
   .check-text {

@@ -9,7 +9,9 @@
     position: relative;
   }
   .conteiner-header {
-    width: 100%;
+    width: 753px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .current::after {
     content: "";
@@ -71,10 +73,7 @@
   }
   .header-flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    justify-content: center;
   }
   .header-logo {
     font-family: "Raleway";
@@ -89,7 +88,10 @@
     display: flex;
     align-items: center;
   }
-
+  .site-nav {
+    margin-left: 124px;
+    margin-right: 117px;
+  }
   /* ------------------- MODAL HEADER---------------- --> */
   .mobile-menu {
     display: none;
@@ -106,12 +108,13 @@
       url(../images/main-page/people-office-desktop.jpg);
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-  background-image: var(--gra), url(../images/main-page/people-office-desktop-2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra),
+        url(../images/main-page/people-office-desktop-2x.jpg);
+    }
   }
-}
   .hero-title {
     max-width: 492px;
     font-weight: 600;
@@ -121,6 +124,9 @@
     margin-right: auto;
   }
   /* ----------------- Section2 ----------> */
+  .section-two-conteiner {
+    max-width: 736px;
+  }
   .section-two-list {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +135,9 @@
   }
   .section-two-item {
     width: calc((100% - 24px) / 2);
+  }
+  .section-two-item:not(:last-child) {
+    margin-bottom: 0;
   }
   .section-two-title {
     text-align: start;
@@ -162,15 +171,15 @@
     width: 768px;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 96px;
-    padding-bottom: 96px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .customers {
     max-width: 552px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .customers-list {
     display: flex;
@@ -200,9 +209,11 @@
     margin-right: auto;
   }
   .cont-tablet {
-    width: 520px;
+    width: 582px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: row;
     row-gap: 72px;
@@ -213,6 +224,8 @@
   }
   .footer-box-one {
     margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .footer-studio {
     text-align: start;
@@ -241,7 +254,7 @@
   .subscribe-icon {
     margin-left: 15px;
   }
-  .subscribe-label{
+  .subscribe-label {
     width: 264px;
   }
   /* ------------ Modal -----------> */

@@ -13,7 +13,7 @@
     margin-right: auto;
   }
   .conteiner-header {
-    width: 1200px;
+    width: 1185px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -60,7 +60,7 @@
   }
   .header-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
   .contacts {
     display: flex;
@@ -77,6 +77,10 @@
   .site-nav > .link:last-child {
     margin-right: 0;
   }
+  .site-nav {
+    margin-left: 77px;
+    margin-right: 331px;
+  }
   /* ------------------- MODAL HEADER---------------- --> */
   .social-list-item:not(last-child) {
     margin-right: 56px;
@@ -92,13 +96,18 @@
   /* ------------------ HERO --------------------------> */
   .hero {
     max-width: 100%;
+    padding-top: 192px;
+    padding-bottom: 192px;
     margin: 0 auto;
     background-image: var(--gra),
       url(../images/main-page/people-office-desktop.jpg);
   }
-
+  .button-text {
+    margin-top: 48px;
+  }
   /* ----------------- Section2 ----------> */
-  .section-two {
+  .section-two-conteiner {
+    max-width: 1200px;
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 15px;
@@ -134,18 +143,20 @@
   /* ------------- Section3 -----------> */
   .section-three {
     display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   /* ------------- Section4 -----------> */
-  .section-four {
-    max-width: 100%;
+  .conteiner-four {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 15px;
     padding-right: 15px;
   }
-
+.section-four {
+    max-width: 100%;
+}
   .section-four-list {
     flex-wrap: nowrap;
     column-gap: 0;
@@ -159,15 +170,14 @@
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+  }
+  .customers {
+    max-width: 1168px;
+    margin-right: auto;
     padding-top: 120px;
     padding-bottom: 120px;
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .customers {
-    max-width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .customers-list {
     justify-content: center;
