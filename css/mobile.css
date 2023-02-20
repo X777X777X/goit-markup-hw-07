@@ -11,7 +11,7 @@
     margin-right: auto;
   }
   .conteiner-header {
-    width: 480px;
+    width: 465px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -31,7 +31,7 @@
   }
   /* ------------------ HERO ------------------------------------> */
   .hero {
-    max-width: 767px;
+    max-width: 753px;
     margin: 0 auto;
     background-image: var(--gra),
       url(../images/main-page/people-office-tablet.jpg);
