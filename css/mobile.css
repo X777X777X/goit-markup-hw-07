@@ -11,10 +11,10 @@
     margin-right: auto;
   }
   .conteiner-header {
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .site-nav {
     display: none;
   }
@@ -37,29 +37,49 @@
       url(../images/main-page/people-office-tablet.jpg);
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-  background-image: var(--gra), url(../images/main-page/people-office-tablet-2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra),
+        url(../images/main-page/people-office-tablet-2x.jpg);
+    }
   }
-}
   /* ----------------- Section2 ----------> */
-/* .section-two {
-  width: 450px;
-} */
+  .section-two-conteiner {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* ------------- Section3 -----------> */
 
   /* ------------- Section4 -----------> */
   .section-four {
-    max-width: 767px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .conteiner-four {
+    width: 294px;
     margin-left: auto;
     margin-right: auto;
   }
   /* ---------- Customers ----------> */
-
+  .customers-conteiner {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* ------------ FOOTER ----------> */
   .footer {
-    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .conteiner-footer {
+    width: 426px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -73,5 +93,6 @@
   }
   .modal {
     width: 392px;
+    height: 607px;
   }
 }
